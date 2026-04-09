@@ -4,7 +4,7 @@ function Reviews() {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    const variant = 9; // Твій варіант
+    const variant = 9;
 
     async function fetchComments() {
       try {
