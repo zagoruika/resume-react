@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+    --wrapper-bg: #FDF7E9;
+    --main-color: #D03B00;
+    --line-color: rgba(208, 59, 0, 0.25);
+}
+
+.dark-mode {
+    --wrapper-bg: #262626;
+    --main-color: #FFFFFF;
+    --line-color: rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .dark-mode-filter {
+    filter: grayscale(1) brightness(10);
+}
+
+@layer base {
+    body {
+        margin: 0;
+        background-color: #FFFFFF;
+        padding: 80px 40px 40px 40px;
+        font-family: 'Space Grotesk', sans-serif;
+        color: var(--main-color);
+        transition: color 0.4s ease;
+    }
+}
